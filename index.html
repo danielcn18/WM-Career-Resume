@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WM Career Resume</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .page{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        .column1{
+            height: 100%;
+            width: 35vw;            
+            position: absolute;
+            background-color: rgb(174, 174, 174);
+            display: flex;
+        }
+        .column1 ul{
+            width: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            padding: 1% 10% 1% 10%;
+        }
+        .column1 li{
+            list-style-type: none;
+            box-sizing: border-box;
+            padding: 1% 0 1% 0;
+            font-family: Arial, sans-serif;
+            font-size: 85%;
+        }
+        .column1 #image{
+            height: 35%;
+            width: 35%;
+            display: block;
+            margin: 0 auto 0 auto;
+            border-radius: 50%;
+            border: 10px solid rgb(233, 231, 231);
+        }
+        .column1 .tabs{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(88, 88, 88);
+            color: white;
+            letter-spacing: 2px;
+            padding: 1% 0 1% 0;
+            font-size: 100%;            
+        }
+        .column1 .innertext{
+            font-size: 18px;
+        }
+        .column2{
+            height: 100%;
+            width: 65vw;
+            position: absolute;
+            background-color: rgb(233, 231, 231);
+            right: 0;
+            font-family: Arial, sans-serif;
+        }
+        .column2 li{
+            /* list-style-type: none; */
+            font-family: Arial, sans-serif;
+            
+        }
+        .column2 .totalTab{
+            padding: 0;
+            margin: 0;
+            padding: 2% 6% 0 6%;
+        }
+        .column2 .tabs{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .column2 .innerTab{
+            padding-left: 1%;
+            font-size: 13px;
+        }
+        .column2 .innerPad{
+            padding-bottom: 0.1%;
+        }
+        .column2 .midInfo{
+            font-size: 15px;
+        }
+        .column2 .innertext{
+            font-size: 12px;
+        }
+        .column2 .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+        .column2 .ref{
+            display: flex;
+            flex-wrap: wrap;
+            width: 35%;
+            /* border: 1px solid black; */
+            padding-right: 5%;
+        }
+        .column2 .ref p{
+            padding: 0 0 0 0;
+        }
+        .column2 .background{
+            height: 100%;
+            width: 100%;
+        }
+        .column2 .nameDes{
+            font-size: 32px;
+        }
+        .column2 .profDes{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Column 1 -->
+        <div class="column1">
+            <ul>
+                <br>
+                <!-- Profile Picture -->
+                <img id="image" src="/images/prof icon.jfif" alt="Image">
+                <br>
+                <!-- Contact Information  -->
+                <li class="tabs">CONTACT</li>
+                <div class="innertext">
+                    <li>Phone<br>###-###-####</li>
+                    <li>Email<br>dchiqu998@west-mec.org</li>
+                    <li>Address<br>#### myStreet zip</li>
+                </div>
+                <br>
+                <!-- Education Information  -->
+                <li class="tabs">EDUCATION</li>
+                <div class="innertext">
+                    <li>High School Details<br>2020 - 2024</li>
+                    <li>West-Mec Details<br>2022 - 2024</li>
+                    <li>Course Studied University/College Details<br>#### - ####</li>
+                </div>
+                <br>
+                <!-- Skills Information -->
+                <li class="tabs">SKILLS</li>
+                <div class="innertext">
+                    <!-- Devlopement Languages List -->
+                    <li>Development Languages<br>JS, Python</li>
+                    <li>Other Skills: ________</li>
+                    <li>Other Skills: ________</li>
+                    <li>Other Skills: ________</li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column2">
+            <!-- div initalizes an overall padding for column2 -->
+            <div class="totalTab">
+
+                <div class="container">
+                    <!-- Background -->
+                    <div class="background">
+                        <!-- Name -->
+                        <p><div class="nameDes">Daniel Chiquete</div>
+                        <!-- Short Description -->
+                        <div class="profDes">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus quasi reprehenderit. Velit accusantium consequuntur labore, eaque at provident aut nemo debitis non cupiditate obcaecati soluta odit laboriosam suscipit minus?</div></p>
+                    </div>
+                </div>
+
+                <!-- Work Experience List -->
+                <p class="tabs"><b>Experience</b></p>
+                <div class="innerTab">
+                    <!-- Job One Information -->
+                    <div class="innerPad">
+                        <p>year-year<br>Company Name | Company Address</p>
+                        <p class="midInfo">Job Position</p>
+                        <p class="innertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ducimus quo accusamus, voluptatum atque ipsum facere assumenda voluptate adipisci doloremque distinctio dolores et reiciendis in odio maxime consequatur. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt cumque est, dolores tempora aspernatur ea velit sint exercitationem repellat architecto, laborum deleniti magni distinctio quaerat possimus soluta tenetur accusamus!</p>
+                    </div>
+                    <!-- Job Two Information -->
+                    <div class="innerPad">
+                        <p>year-year<br>Company Name | Company Address</p>
+                        <p class="midInfo">Job Position</p>
+                        <p class="innertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ducimus quo accusamus, voluptatum atque ipsum facere assumenda voluptate adipisci doloremque distinctio dolores et reiciendis in odio maxime consequatur. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt cumque est, dolores tempora aspernatur ea velit sint exercitationem repellat architecto, laborum deleniti magni distinctio quaerat possimus soluta tenetur accusamus!</p>
+                    </div>
+                    <!-- Job Three Information -->
+                    <div class="innerPad">
+                        <p>year-year<br>Company Name | Company Address</p>
+                        <p class="midInfo">Job Position</p>
+                        <p class="innertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid ducimus quo accusamus, voluptatum atque ipsum facere assumenda voluptate adipisci doloremque distinctio dolores et reiciendis in odio maxime consequatur. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt cumque est, dolores tempora aspernatur ea velit sint exercitationem repellat architecto, laborum deleniti magni distinctio quaerat possimus soluta tenetur accusamus!</p>
+                    </div>
+                </div>
+
+                <!-- Reference List -->
+                <p class="tabs"><b>Reference</b>
+                <div class="container">
+                    <!-- Reference One List -->
+                    <div class="ref">
+                        Name Surname<br>
+                        Job position, Company Name</p>
+                        <div class="innertext">
+                            <p><b>Phone: </b>123-456-7890</p>
+                            <p><b>Email: </b>emailExample.com</p>
+                        </div>
+                    </div>
+                    <!-- Reference Two List -->
+                    <div class="ref">
+                        Name Surname<br>
+                        Job position, Company Name</p>
+                        <div class="innertext">
+                            <p><b>Phone: </b>123-456-7890</p>
+                            <p><b>Email: </b>emailExample.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
